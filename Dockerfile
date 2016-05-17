@@ -8,4 +8,5 @@ RUN apt-get autoremove -y
 RUN apt-get install transmission-daemon -y
 RUN mkdir /downloads
 RUN mkdir /downloads/incomplete
+ENTRYPOINT ["/bin/sh"]
 CMD ['transmission-daemon -f']
